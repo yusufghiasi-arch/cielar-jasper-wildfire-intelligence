@@ -1,0 +1,43 @@
+{
+  "event": {
+    "name": "Jasper Wildfire 2024",
+    "structures_evaluated": 572,
+    "destroyed": 240,
+    "survived": 332
+  },
+  "primary_model": {
+    "name": "Localized wildfire exposure + pre-fire contextual intelligence",
+    "validation": "Frozen 3-fold 250 m spatial cross-validation",
+    "balanced_accuracy": 0.7933,
+    "roc_auc": 0.8514,
+    "average_precision": 0.7497,
+    "f1": 0.7689,
+    "destroyed_recall": 0.8667,
+    "survived_specificity": 0.7199,
+    "destroyed_precision": 0.691
+  },
+  "confusion_matrix": {
+    "true_positive": 208,
+    "true_negative": 239,
+    "false_positive": 93,
+    "false_negative": 32
+  },
+  "model_comparison": {
+    "hazard_only_balanced_accuracy": 0.7322,
+    "combined_balanced_accuracy": 0.7933,
+    "context_fixed_hazard_only_errors": 58,
+    "context_introduced_errors": 37
+  },
+  "uncertainty": {
+    "bootstrap_replicates": 5000,
+    "balanced_accuracy_improvement_mean": 0.0562,
+    "probability_combined_model_better_ba": 0.9456,
+    "f1_improvement_mean": 0.0816,
+    "probability_combined_model_better_f1": 0.9612
+  },
+  "interpretation": {
+    "sentinel2_resolution_m": 10,
+    "imagery_role": "Interpretation only; not used as a post-fire model predictor",
+    "prediction_type": "Out-of-fold building-level wildfire damage-risk estimates"
+  }
+}
