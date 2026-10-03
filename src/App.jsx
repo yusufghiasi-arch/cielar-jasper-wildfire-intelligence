@@ -22,6 +22,12 @@ export default function App() {
       <main className="wildfire-standalone-main">
         <WildfireIntelligence />
       </main>
+
+      <footer className="wildfire-site-footer">
+        <span>
+          Developed by <strong>Yusof Ghiasi</strong> &middot; Cielar
+        </span>
+      </footer>
     </div>
   );
 }
